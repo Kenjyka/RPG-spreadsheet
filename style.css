@@ -1,0 +1,194 @@
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #F4DEAD;
+    color:#1C3440;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 100%;
+}
+
+
+#names{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 7rem;
+    width: 15.625rem;
+    height: 5.875rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+input {
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+}
+#name,#surname {
+    display: flex;
+    width: 6em;
+    max-height: 3em;
+    overflow-wrap:break-word ;
+    font-size: 30pt;
+    text-align: center; 
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+}
+
+input::placeholder {
+    color: inherit;
+}
+#level {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 6.25rem;
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+}
+#level_img {
+    width: 7.813rem;
+    height: 14rem;
+    display: flex;
+}
+#level_n {
+    font-size: 3.333rem;
+    margin-top: 1.25rem;
+    position: absolute;
+    width: 7.5rem;
+}
+.standard:focus {
+    outline: none;
+}
+.no_arrows::-webkit-inner-spin-button,
+.no_arrows::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+#recursos {
+    grid-column: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hp, #mp {
+    color:#F4DEAD ;
+    background-color: #AA321A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.5rem;
+    height: 3.125rem;
+}
+#mp {
+    background-color: #1C3440;
+}
+.atual {
+    font-size: 1.667rem;
+    text-align: right;
+    width: 6.25rem;
+    height: 1.875rem;
+    font-family: inherit;
+}
+.total {
+    font-size: 1.667rem;
+    text-align: left;
+    width: 6.25rem;
+    height: 1.875rem;
+    font-family: inherit;
+}
+
+#attributes_bar {
+    width: 3rem;
+    height: 6rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+select {
+    text-align: center;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+    appearance: none;
+    font-size: 1rem;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    color: #AA321A;
+}
+.blue {
+    color: #1C3440;
+}
+.green {
+    color: #5FA870;
+}
+
+.attr_numbers {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    appearance: none;
+}
+
+
+@media (max-width: 760px) {
+    header {
+        grid-template-columns: 2fr 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #level {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #names {
+        margin: 0;
+        padding: 1em;
+        margin-bottom: 1em ;
+    }
+    #recursos {
+        grid-column: 2;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #circle {
+        margin-left: 11em;
+    }
+
+    #hp, #mp {
+        width: 10rem;
+        margin: 0.5rem;
+    }
+}

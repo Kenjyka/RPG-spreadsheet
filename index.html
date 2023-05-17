@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shak Spreadsheet</title>
+    
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="level" class="grid-item">
+            <svg id="level_img" viewBox="0 0 432.35 341.29">
+                <path d="m216.17,5.66l210.52,210.52-119.46,119.46-88.23-88.23-2.83-2.83-2.83,2.83-88.23,88.23L5.66,216.17,216.17,5.66m0-5.66L0,216.17l125.11,125.11,91.06-91.06,91.06,91.06,125.11-125.11L216.17,0h0Z"/>
+            </svg>
+            <input type="number" name="level_n" id="level_n" class="no_arrows standard" placeholder="0">
+            <svg id="circle">
+                <circle  cx="63" cy="20" r="20" fill="#1C3440">
+            </svg>
+        </div>
+        <div id="names" class="grid-item">
+            <input type="text" id="surname" class="standard" spellcheck="false" placeholder="Sobrenome">
+            <input type="text" id="name" class="standard" spellcheck="false" placeholder="Nome">
+        </div>
+        <div id="recursos" class="grid-item">
+            <div id="hp">
+                <input type="number" name="hp_atual" id="hp_atual" class="atual no_arrows standard" placeholder="0">
+                <span>/</span>
+                <input type="number" name="hp_total" id="hp_total" class="total no_arrows standard" placeholder="0">
+            </div>
+            <div id="mp">
+                <input type="number" name="mp_atual" id="mp_atual" class="atual no_arrows standard" placeholder="0">
+                <span>/</span>
+                <input type="number" name="mp_total" id="mp_total" class="total no_arrows standard" placeholder="0">
+            </div>
+        </div>
+    </header>
+    <aside id="attributes_bar">
+        <section>
+            <select name="attr1" id="attr1" class="red" title="atributo">
+                <option value="blank" selected>Atributo</option>
+                <option value="for">Força</option>
+                <option value="maes">Maestria</option>
+                <option value="vel">Velocidade</option>
+                <option value="vig">Vigor</option>
+                <option value="rob">Robustez</option>
+                <option value="pow">Poder</option>
+                <option value="efi">Eficiência</option>
+                <option value="con">Conjuração</option>
+                <option value="ene">Energia</option>
+                <option value="res">Resistência</option>
+                <option value="pot">Potência</option>
+                <option value="apt">Aptidão</option>
+                <option value="cel">Celeridade</option>
+                <option value="cons">Constituição</option>
+                <option value="ten">Tenacidade</option>
+            </select>
+            <div class="square">
+                <svg width="4rem" height="4rem">
+                    <rect x="0" y="0" width="4rem" height="4rem" stroke="#AA321A" stroke-width="0.5rem" fill="transparent"></rect>
+                </svg>
+                <input type="number" name="attr1_n" id="attr1_n" class="attr_numbers no_arrows red" placeholder="0">
+            </div>
+        </section>
+        <section>
+            <select name="attr2" id="attr2" class="red" title="atributo">
+                <option value="blank" selected>Atributo</option>
+                <option value="for">Força</option>
+                <option value="maes">Maestria</option>
+                <option value="vel">Velocidade</option>
+                <option value="vig">Vigor</option>
+                <option value="rob">Robustez</option>
+                <option value="pow">Poder</option>
+                <option value="efi">Eficiência</option>
+                <option value="con">Conjuração</option>
+                <option value="ene">Energia</option>
+                <option value="res">Resistência</option>
+                <option value="pot">Potência</option>
+                <option value="apt">Aptidão</option>
+                <option value="cel">Celeridade</option>
+                <option value="cons">Constituição</option>
+                <option value="ten">Tenacidade</option>
+            </select>
+            <div class="square">
+                <svg width="4rem" height="4rem">
+                    <rect x="0" y="0" width="4rem" height="4rem" stroke="#AA321A" stroke-width="0.5rem" fill="transparent"></rect>
+                </svg>
+                <input type="number" name="attr1_n" id="attr1_n" class="attr_numbers no_arrows red" placeholder="0">
+            </div>
+        </section>
+        <section>
+            <select name="attr3" id="attr3" class="blue" title="atributo">
+                <option value="blank" selected>Atributo</option>
+                <option value="for">Força</option>
+                <option value="maes">Maestria</option>
+                <option value="vel">Velocidade</option>
+                <option value="vig">Vigor</option>
+                <option value="rob">Robustez</option>
+                <option value="pow">Poder</option>
+                <option value="efi">Eficiência</option>
+                <option value="con">Conjuração</option>
+                <option value="ene">Energia</option>
+                <option value="res">Resistência</option>
+                <option value="pot">Potência</option>
+                <option value="apt">Aptidão</option>
+                <option value="cel">Celeridade</option>
+                <option value="cons">Constituição</option>
+                <option value="ten">Tenacidade</option>
+            </select>
+            <div class="square">
+                <svg width="4rem" height="4rem">
+                    <rect x="0" y="0" width="4rem" height="4rem" stroke="#AA321A" stroke-width="0.5rem" fill="transparent"></rect>
+                </svg>
+                <input type="number" name="attr1_n" id="attr1_n" class="attr_numbers no_arrows red" placeholder="0">
+            </div>
+        </section>
+        <section>
+            <select name="attr4" id="attr4" class="blue" title="atributo">
+                <option value="blank" selected>Atributo</option>
+                <option value="for">Força</option>
+                <option value="maes">Maestria</option>
+                <option value="vel">Velocidade</option>
+                <option value="vig">Vigor</option>
+                <option value="rob">Robustez</option>
+                <option value="pow">Poder</option>
+                <option value="efi">Eficiência</option>
+                <option value="con">Conjuração</option>
+                <option value="ene">Energia</option>
+                <option value="res">Resistência</option>
+                <option value="pot">Potência</option>
+                <option value="apt">Aptidão</option>
+                <option value="cel">Celeridade</option>
+                <option value="cons">Constituição</option>
+                <option value="ten">Tenacidade</option>
+            </select>
+            <div class="square">
+                <svg width="4rem" height="4rem">
+                    <rect x="0" y="0" width="4rem" height="4rem" stroke="#AA321A" stroke-width="0.5rem" fill="transparent"></rect>
+                </svg>
+                <input type="number" name="attr1_n" id="attr1_n" class="attr_numbers no_arrows red" placeholder="0">
+            </div>
+        </section>
+        <section>
+            <select name="attr5" id="attr5" class="green" title="atributo">
+                <option value="blank" selected>Atributo</option>
+                <option value="for">Força</option>
+                <option value="maes">Maestria</option>
+                <option value="vel">Velocidade</option>
+                <option value="vig">Vigor</option>
+                <option value="rob">Robustez</option>
+                <option value="pow">Poder</option>
+                <option value="efi">Eficiência</option>
+                <option value="con">Conjuração</option>
+                <option value="ene">Energia</option>
+                <option value="res">Resistência</option>
+                <option value="pot">Potência</option>
+                <option value="apt">Aptidão</option>
+                <option value="cel">Celeridade</option>
+                <option value="cons">Constituição</option>
+                <option value="ten">Tenacidade</option>
+            </select>
+            <div class="square">
+                <svg width="4rem" height="4rem">
+                    <rect x="0" y="0" width="4rem" height="4rem" stroke="#AA321A" stroke-width="0.5rem" fill="transparent"></rect>
+                </svg>
+                <input type="number" name="attr1_n" id="attr1_n" class="attr_numbers no_arrows red" placeholder="0">
+            </div>
+        </section>
+        <section>
+            <select name="attr6" id="attr6" class="green" title="atributo">
+                <option value="blank" selected>Atributo</option>
+                <option value="for">Força</option>
+                <option value="maes">Maestria</option>
+                <option value="vel">Velocidade</option>
+                <option value="vig">Vigor</option>
+                <option value="rob">Robustez</option>
+                <option value="pow">Poder</option>
+                <option value="efi">Eficiência</option>
+                <option value="con">Conjuração</option>
+                <option value="ene">Energia</option>
+                <option value="res">Resistência</option>
+                <option value="pot">Potência</option>
+                <option value="apt">Aptidão</option>
+                <option value="cel">Celeridade</option>
+                <option value="cons">Constituição</option>
+                <option value="ten">Tenacidade</option>
+            </select>
+            <div class="square">
+                <svg width="4rem" height="4rem">
+                    <rect x="0" y="0" width="4rem" height="4rem" stroke="#AA321A" stroke-width="0.5rem" fill="transparent"></rect>
+                </svg>
+                <input type="number" name="attr1_n" id="attr1_n" class="attr_numbers no_arrows red" placeholder="0">
+            </div>
+        </section>
+    </aside>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
