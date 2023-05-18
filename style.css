@@ -86,7 +86,6 @@ input::placeholder {
 }
 
 #hp, #mp {
-    color:#F4DEAD ;
     background-color: #AA321A;
     display: flex;
     justify-content: center;
@@ -117,8 +116,8 @@ input::placeholder {
     height: 6rem;
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
 }
 
@@ -147,6 +146,9 @@ select {
 .green {
     color: #5FA870;
 }
+.bage {
+    color: #F4DEAD;
+}
 
 .attr_numbers {
     position: absolute;
@@ -158,6 +160,12 @@ select {
 
 
 @media (max-width: 760px) {
+
+    body {
+        float: none;
+        margin: 0 auto;
+        max-width: 100%;
+    }
     header {
         grid-template-columns: 2fr 1fr;
         display: flex;
