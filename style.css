@@ -11,6 +11,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr;
     width: 100%;
 }
 
@@ -78,9 +79,10 @@ input::placeholder {
 }
 
 #recursos {
-    grid-column: 3;
+    width: 24rem;
+    grid-column: 1;
+    grid-row: 2;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
@@ -92,6 +94,7 @@ input::placeholder {
     align-items: center;
     width: 12.5rem;
     height: 3.125rem;
+    margin-bottom: 1rem;
 }
 #mp {
     background-color: #1C3440;
