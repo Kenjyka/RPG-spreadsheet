@@ -175,6 +175,7 @@ select {
     #hp, #mp {
         margin-bottom: 1rem;
     }
+}
 @media (max-width: 760px) {
 
     body {
